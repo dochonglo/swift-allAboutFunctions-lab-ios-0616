@@ -28,7 +28,7 @@ func favoriteCharacter(character: String) {
     print("My favorite character is \(character).")
 }
 
-favoriteCharacter("Yoda")
+favoriteCharacter(character: "Yoda")
 
 
 
@@ -36,11 +36,11 @@ favoriteCharacter("Yoda")
 
 //: ### Question 4
 let myFavCharacter = "Chewbacca"
-favoriteCharacter(myFavCharacter)
+favoriteCharacter(character: myFavCharacter)
 var anotherCharacter = "Luke Skywalker"
-favoriteCharacter(anotherCharacter)
+favoriteCharacter(character: anotherCharacter)
 anotherCharacter = "Princess Leia"
-favoriteCharacter(anotherCharacter)
+favoriteCharacter(character: anotherCharacter)
 
 
 
@@ -51,7 +51,7 @@ func problems(numberOfProblems: Int) {
     print("I got \(numberOfProblems) problems but Swift ain't one")
 }
 
-problems(47)
+problems(numberOfProblems: 99)
 
 
 
@@ -62,7 +62,7 @@ func favoriteBand(band: String, position: Int) {
     print("My #\(position) favorite band is \(band).")
 }
 
-favoriteBand("Nickelback", position: 512)
+favoriteBand(band: "Nickelback", position: 512)
 
 
 
@@ -73,7 +73,7 @@ func badFavoriteBand(bandName: String, position: Int) {
     print("My #\(position) favorite band is \(bandName).")
 }
 
-badFavoriteBand("The Beatles", position: 2)
+badFavoriteBand(bandName: "The Beatles", position: 2)
 //: Don't forget: Every parameter after the first one must be named when calling a function with multiple parameters.
 
 
@@ -86,7 +86,7 @@ func alsoBadFavoriteBand(bandName: String, position: Int) {
     print("My #\(position) favorite band is \(bandName)")
 }
 
-alsoBadFavoriteBand("Blink-182", position: 42)
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -97,7 +97,7 @@ func madLib(characterName: String, noun: String, preposition: String) {
     print("To \(noun) and \(preposition), \(characterName)!")
 }
 
-madLib("Homer Simpson", noun: "refrigerator", preposition: "behind")
+madLib(characterName: "Homer Simpson", noun: "refrigerator", preposition: "behind")
 
 
 
@@ -127,7 +127,7 @@ print(luckyNumber())
 
 //: ### Question 12
 func infinityAndBeyond(character: String) -> String {
-    return "To infinity and beyond, \(character.uppercaseString)!"
+    return "To infinity and beyond, \(character.uppercased())!"
 }
 
-print(infinityAndBeyond("Woody"))
+print(infinityAndBeyond(character: "Woody"))
